@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgPhone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/iphone"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/isNew"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/namePhoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@id/imgPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="name"/>
+
+    <TextView
+        android:id="@+id/descriptionPhoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/namePhoneTv"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="description"/>
+
+    <Button
+        android:id="@+id/buyNow"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="@string/buy_now"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/descriptionPhoneTv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
