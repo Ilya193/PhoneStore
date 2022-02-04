@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bestSellerAdapter: BestSellerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(binding.root)
-
         if (resources.configuration.uiMode.and(Configuration.UI_MODE_NIGHT_MASK) ==
             Configuration.UI_MODE_NIGHT_YES) {
-            //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
+
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
 
         viewModel.getHotSalesList()
         viewModel.getBestSellerList()
