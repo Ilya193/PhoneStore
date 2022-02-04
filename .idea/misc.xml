@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/code/PhoneStore/app/src/main/res/drawable/bottom_background.xml" value="0.212" />
         <entry key="..\:/code/PhoneStore/app/src/main/res/drawable/button_background.xml" value="0.208" />
         <entry key="..\:/code/PhoneStore/app/src/main/res/drawable/card_view_background.xml" value="0.1855" />
         <entry key="..\:/code/PhoneStore/app/src/main/res/drawable/edit_text_search_background.xml" value="0.208" />
