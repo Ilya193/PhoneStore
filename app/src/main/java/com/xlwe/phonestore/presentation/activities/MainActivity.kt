@@ -7,11 +7,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.GridLayoutManager
 import com.xlwe.phonestore.R
 import com.xlwe.phonestore.databinding.ActivityMainBinding
-import com.xlwe.phonestore.presentation.adapter.bestseller.BestSellerAdapter
-import com.xlwe.phonestore.presentation.adapter.hotsales.HotSalesAdapter
+import com.xlwe.phonestore.presentation.adapters.bestseller.BestSellerAdapter
+import com.xlwe.phonestore.presentation.adapters.hotsales.HotSalesAdapter
 import com.xlwe.phonestore.presentation.fragments.BottomSheetFragment
 import com.xlwe.phonestore.presentation.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint

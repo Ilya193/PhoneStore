@@ -1,4 +1,4 @@
-package com.xlwe.phonestore.presentation.adapter.hotsales
+package com.xlwe.phonestore.presentation.adapters.hotsales
 
 import android.view.LayoutInflater
 import android.view.View

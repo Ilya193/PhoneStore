@@ -1,4 +1,4 @@
-package com.xlwe.phonestore.presentation.adapter.bestseller
+package com.xlwe.phonestore.presentation.adapters.bestseller
 
 import android.graphics.Paint
 import android.view.LayoutInflater

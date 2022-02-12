@@ -1,4 +1,4 @@
-package com.xlwe.phonestore.presentation.adapter.hotsales
+package com.xlwe.phonestore.presentation.adapters.hotsales
 
 import androidx.recyclerview.widget.DiffUtil
 import com.xlwe.phonestore.domain.model.HomeStore

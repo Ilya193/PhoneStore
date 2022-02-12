@@ -1,4 +1,4 @@
-package com.xlwe.phonestore.presentation.adapter.bestseller
+package com.xlwe.phonestore.presentation.adapters.bestseller
 
 import androidx.recyclerview.widget.DiffUtil
 import com.xlwe.phonestore.domain.model.BestSeller
