@@ -1,5 +1,6 @@
 package com.xlwe.phonestore.data.hotsales
 
+import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.xlwe.phonestore.data.retrofit.ApiRequests
@@ -7,11 +8,12 @@ import com.xlwe.phonestore.data.retrofit.model.HotSalesMapper
 import com.xlwe.phonestore.domain.hotsales.HotSalesRepository
 import com.xlwe.phonestore.domain.model.BestSeller
 import com.xlwe.phonestore.domain.model.HomeStore
+import dagger.hilt.android.qualifiers.ApplicationContext
 import retrofit2.awaitResponse
 import javax.inject.Inject
 
 class HotSalesRepositoryImpl @Inject constructor(
-    private val apiRequests: ApiRequests
+    private val apiRequests: ApiRequests,
 ): HotSalesRepository {
     private val mapper = HotSalesMapper()
     private val hotSalesPhone = MutableLiveData<List<HomeStore>>()
